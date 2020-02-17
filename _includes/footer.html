@@ -1,6 +1,6 @@
 <footer class="footer">
-    <p>&copy; 2018-{{ site.time | date: '%Y' }} Marquis Kurt. All rights reserved. Syntax highlight theme by <a href="https://draculatheme.com/pygments/">Dracula Theme</a>.</p>
-    <p>Running into a problem with the site? <a href="mailto:webmaster@marquiskurt.net">Email me &rsaquo;</a></p>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved. Syntax highlight theme by <a href="https://draculatheme.com/pygments/">Dracula Theme</a>.</p>
+    <p>Running into a problem with the site? <a href="mailto:{{ site.webmaster_email }}">Email me &rsaquo;</a></p>
     <div class="spacer"></div>
     <p>
         <dark-mode-toggle
