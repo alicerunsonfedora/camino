@@ -1,0 +1,28 @@
+---
+title: Blog
+layout: default
+permalink: /blog
+---
+<h1>Blog</h1>
+<div>
+    <p><a href="/tags.html">Filter by tags &rightarrow;</a></p>
+</div>
+<div class="card-grid-container">
+    {% for post in site.posts %}
+    <div class="card-grid-item">
+        <div class="card">
+            <div class="card-image-bay">
+                <img class="card-image" src=".{{ site.cover_img_url }}{{ post.date | date: '%Y-%m-%d'}}-cover.png" alt=""/>
+            </div>
+            <div class="card-content">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-subtitle">{{ post.date | date: "%B %d, %Y" }}</p>
+                <p>{{ post.excerpt | truncatewords: 30, '...' }}</p>
+            </div>
+            <div class="card-actions">
+                <a class="card-btn" href="{{ post.url }}">Read more</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

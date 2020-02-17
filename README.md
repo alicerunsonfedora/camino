@@ -1,4 +1,4 @@
-# Camino
+# Camino <small>Beta</small>
 
 A simple, Apple-inspired KISS theme for Jekyll.
 

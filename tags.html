@@ -1,0 +1,19 @@
+---
+title: Posts by Tag
+layout: default
+permalink: /tags
+---
+
+<h1>Tags</h1>
+{% for tag in site.tags %}
+    <div class="jekyll-tag-section">
+        <a name="{{ tag[0] }}"></a>
+        <h2><i data-feather="tag" style="vertical-align: middle;">label</i> {{ tag[0] }} </h2>
+        <div>
+            {% assign posts = tag[1] %}
+            {% for post in posts %}
+                <p><a href="{{ post.url }}">{{ post.title }} | {{ post.date | date: '%B %d, %Y' }}</a></p>
+            {% endfor %}
+        </div>
+    </div>
+{% endfor %}
