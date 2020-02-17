@@ -1,0 +1,12 @@
+<nav class="nav-header">
+    <img class="nav-profile" src="{{ site.baseurl }}/images/profile.jpeg"/>
+    <h1>Marquis Kurt</h1>
+    <p>Python, Swift, and web developer</p>
+    <div class="nav-mobile-menu-button" onclick="mobileMenu()">
+        <i data-feather="menu">menu</i>
+    </div>
+    <div id="nav-mobile-menu" class="nav-mobile-closed">
+        {% include navlinks.html %}
+    </div>
+    <div class="spacer"></div>
+</nav>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <meta property="og:title" content="{{ page.title }} - {{ site.title }}"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}"/>
+    <meta property="og:image" content="{{ site.baseurl }}{{ site.doc_img_url }}{{ page.shortcode }}.png"/>
+    <meta property="og:image:alt" content="Journal image cover"/>
+    <meta property="article:author" content="{{ site.author }}"/>
+    <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 140}}"/>
+    <meta property="article:published_time" content="{{ page.date }}"/>
+    {% for tag in page.tags %}
+        <meta property="article:tag" content="{{ tag }}"/>
+    {% endfor %}
+    {% include navbar.html %}
+    <body>
+        <div class="main">
+
+            <div class="metadata">
+                <div class="print-only">
+                    <p>Marquis Kurt</p>
+                    <p>{{ page.class }}</p>
+                    <p>{{ page.date | date: '%d %B %Y' }}</p>
+                </div>
+                <h1>{{ page.title }}</h1>
+                <h3>{{ page.class }}</h3>
+                <div class="banner banner-info display-only">
+                    Printing this page will reformat the page for a printer-friendly, MLA-styled version of the document.
+                </div>
+            </div>
+            <div class="academic">
+                {{ content }}
+            </div>
+        </div>
+    </body>
+    {% include footer.html %}
+    {% include scripts.html %}
+</html>

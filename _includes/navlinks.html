@@ -1,0 +1,5 @@
+<ul class="nav-links">
+    {% for link in site.nagivation %}
+    <li><a class="nav-link" href="{{ link.link }}">{{ link.name }}</a></li>
+    {% endfor %}
+</ul>

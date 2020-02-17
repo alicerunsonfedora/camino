@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <meta property="og:title" content="{{ page.title }} - {{ site.title }}"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}"/>
+    <meta property="og:description" content="{{ page.graph }}"/>
+    <meta property="article:author" content="{{ site.author }}"/>
+    {% include navbar.html %}
+    <body>
+        <div class="main">
+            {{ content }}
+        </div>
+    </body>
+    {% include footer.html %}
+    {% include scripts.html %}
+</html>
