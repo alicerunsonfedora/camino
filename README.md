@@ -21,46 +21,89 @@ In your `_config.yml`, add the following line:
 remote_theme: alicerunsonfedora/camino
 ```
 
-## Example Configuration
+## Example `_config.yml`
 
-```yaml
-title: Camino
+```yml
+# Standard Jekyll Information. These fields are also used in the navbar on the
+# top of the website, as well as OpenGraph information.
+title: My Site
 author: Marquis Kurt
-description: A KISS theme for Jekyll
+description: Welcome to my GitHub Pages website
 
+# This tells Jekyll to load Camino.
+remote_theme: alicerunsonfedora/camino
+
+# These are the plugins necessary to get the theme working.
+plugins:
+  - jekyll-octicons
+  - jekyll-sitemap
+  - jekyll-feed
+  - kramdown
+
+# This is the email address to use when clicking "Email me" in the footer of the
+# website.
 webmaster_email: contact@example.com
 
+# This path will point to images used for the article/document format. Camino will
+# look in this path for images with the file name of the shortcode listed on a document
+# page. For example, 'wrt181-assignment1.png'
 doc_img_url: "/images/cwp/"
-cover_img_url: "/images/covers/"
-profile_img_url: "logo.svg"
 
+# This path will point to images used for covers on posts. Camino will look in this path
+# for image covers with the page's date. For example, '2020-02-17-cover.png'
+cover_img_url: "/images/covers/"
+
+# This path to an image file will be used as the profile picture in the navbar.
+profile_img_url: "images/profile.jpeg"
+
+# This setting controls the accent color on the website. The accent color affects buttons, links,
+# and other places of the theme. The 'light' and 'dark' entries control what color is displayed
+# in light mode and dark mode, respectively. The standard and highlight entries control the idle
+# and hover states.
 accent:
   light:
-    standard: "rgb(255, 149, 0)"
-    highlight: "#ffaa33"
+    standard: "rgb(52, 199, 89)"
+    highlight: "#5dd27a"
   dark:
-    standard: "rgb(255, 159, 10)"
-    highlight: "#ffb23b"
+    standard: "rgb(48, 209, 88)"
+    highlight: "#59da79"
 
+# This list controls the links visible in the navbar.
 navigation:
   - name: "Home"
     link: "/index.html"
-  - name: "GitHub"
-    link: "https://github.com/alicerunsonfedora/camino"
+  - name: "Blog"
+    link: "/blog.html"
 
+# These Markdown settings are used to register the syntax highlighter.
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: 'highlight'
-
-plugins:
-  - jekyll-octicons
-  - jekyll-sitemap
-  - jekyll-feed
-  - kramdown
 ```
+## Using document formats
+
+To create a document/article for Camino, add the following front matter to your web page or Markdown file:
+
+```yml
+---
+title: Document Title
+subtitle: A fancy subtitle
+layout: document
+class: History 207
+shortcode: hist207-one
+date: 2018-08-29
+---
+```
+
+- `title`: The title of the document
+- `subtitle` The subtitle of the document
+- `layout`: The particular layout for the page. Should be set to `document`
+- `class`: This field can be used to denote an academic class or the purpose of the document.
+- `shortcode`: The shortcode used to denote the name of the image to use in conjunction with `doc_img_url`
+- `date`: The document's publish date
 
 ## License
 
