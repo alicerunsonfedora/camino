@@ -10,7 +10,7 @@ webmaster_email: contact@example.com
 
 doc_img_url: "/images/cwp/"
 cover_img_url: "/images/covers/"
-profile_img_url: "/images/profile.jpg"
+profile_img_url: "logo.svg"
 
 accent:
   light:
@@ -23,8 +23,8 @@ accent:
 navigation:
   - name: "Home"
     link: "/index.html"
-  - name: "About"
-    link: "/about.html"
+  - name: "GitHub"
+    link: "https://github.com/alicerunsonfedora/camino"
 
 markdown: kramdown
 kramdown:

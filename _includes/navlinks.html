@@ -1,6 +1,5 @@
 <ul class="nav-links">
-    {% for link in site.nagivation %}
-    {% assign page = link[1] %}
+    {% for page in site.navigation %}
     <li><a class="nav-link" href="{{ page.link }}">{{ page.name }}</a></li>
     {% endfor %}
 </ul>
