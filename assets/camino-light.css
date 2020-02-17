@@ -11,8 +11,8 @@
     no preference.
  */
  :root {
-    --accent:  rgb(255, 149, 0);
-    --accent-highlight: #ffaa33;
+    --accent:  {{ site.accent.light.standard }};
+    --accent-highlight: {{ site.accent.light.highlight }};
     --body-background: white;
     --body-color: #212121;
     --metadata-header-color: #666;

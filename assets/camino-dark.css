@@ -10,8 +10,8 @@
     This is used for the dark themes only.
  */
  :root {
-    --accent: rgb(255, 159, 10);
-    --accent-highlight: #ffb23b;
+    --accent: {{ site.accent.dark.standard }};
+    --accent-highlight: {{ site.accent.dark.highlight }};
     --body-background: #212121;
     --body-color: #f4f4f4;
     --metadata-header-color: #f4f4f4;

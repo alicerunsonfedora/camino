@@ -10,6 +10,15 @@ webmaster_email: contact@example.com
 
 doc_img_url: "/images/cwp/"
 cover_img_url: "/images/covers/"
+profile_img_url: "/images/profile.jpg"
+
+accent:
+  light:
+    standard: "rgb(255, 149, 0)"
+    highlight: "#ffaa33"
+  dark:
+    standard: "rgb(255, 159, 10)"
+    highlight: "#ffb23b"
 
 navigation:
   - name: "Home"
