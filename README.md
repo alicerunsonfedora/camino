@@ -53,8 +53,13 @@ doc_img_url: "/images/cwp/"
 # for image covers with the page's date. For example, '2020-02-17-cover.png'
 cover_img_url: "/images/covers/"
 
-# This path to an image file will be used as the profile picture in the navbar.
-profile_img_url: "images/profile.jpeg"
+# These settings configure the navbar profile picture.
+nav_profile:
+  # The image path to the profile.
+  img_url: "images/profile.jpeg"
+
+  # Whether to disable the drop shadow.
+  flat: false
 
 # This setting controls the accent color on the website. The accent color affects buttons, links,
 # and other places of the theme. The 'light' and 'dark' entries control what color is displayed

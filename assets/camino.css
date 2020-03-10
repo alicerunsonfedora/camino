@@ -110,6 +110,10 @@ pre, code {
     border-radius: 50%;
 }
 
+.nav-header .nav-profile.no-shadow {
+    box-shadow: none;
+}
+
 .nav-links {
     display: inline-flex;
     list-style: none;

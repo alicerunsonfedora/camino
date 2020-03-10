@@ -10,7 +10,10 @@ webmaster_email: webmaster@marquiskurt.net
 
 doc_img_url: "/images/cwp/"
 cover_img_url: "/images/covers/"
-profile_img_url: "logo.svg"
+
+nav_profile:
+  img_url: "logo.svg"
+  flat: false
 
 accent:
   light:
