@@ -44,6 +44,16 @@ plugins:
 # website.
 webmaster_email: contact@example.com
 
+# The custom copyright text.
+copyright: "&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved."
+
+# This list controls the links visible in the navbar.
+navigation:
+  - name: "Home"
+    link: "/index.html"
+  - name: "Blog"
+    link: "/blog.html"
+
 # This segment is the heart of the Camino configuration.
 camino:
   # This path will point to images used for the article/document format. Camino will
@@ -89,13 +99,6 @@ camino:
       dark:
         standard: "rgb(255, 159, 10)"
         highlight: "#ffb23b"
-
-# This list controls the links visible in the navbar.
-navigation:
-  - name: "Home"
-    link: "/index.html"
-  - name: "Blog"
-    link: "/blog.html"
 
 # These Markdown settings are used to register the syntax highlighter.
 markdown: kramdown

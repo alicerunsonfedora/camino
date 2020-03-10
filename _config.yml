@@ -5,7 +5,21 @@
 title: Camino
 author: Marquis Kurt
 description: A KISS theme for Jekyll
+
 webmaster_email: webmaster@marquiskurt.net
+copyright: "&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved."
+
+navigation:
+  - name: "Home"
+    link: "/index.html"
+  - name: "Blog"
+    link: "/blog.html"
+  - name: "GitHub"
+    link: "https://github.com/alicerunsonfedora/camino"
+  - name: "Example Post"
+    link: "/2020/02/17/example_post.html"
+  - name: "Example Article"
+    link: "/example_article.html"
 
 camino:
   doc_img_url: "/images/cwp/"
@@ -26,18 +40,6 @@ camino:
       dark:
         standard: "rgb(255, 159, 10)"
         highlight: "#ffb23b"
-
-navigation:
-  - name: "Home"
-    link: "/index.html"
-  - name: "Blog"
-    link: "/blog.html"
-  - name: "GitHub"
-    link: "https://github.com/alicerunsonfedora/camino"
-  - name: "Example Post"
-    link: "/2020/02/17/example_post.html"
-  - name: "Example Article"
-    link: "/example_article.html"
 
 markdown: kramdown
 kramdown:
