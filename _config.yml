@@ -5,23 +5,27 @@
 title: Camino
 author: Marquis Kurt
 description: A KISS theme for Jekyll
-
 webmaster_email: webmaster@marquiskurt.net
 
-doc_img_url: "/images/cwp/"
-cover_img_url: "/images/covers/"
-
-nav_profile:
-  img_url: "logo.svg"
-  flat: false
-
-accent:
-  light:
-    standard: "rgb(255, 149, 0)"
-    highlight: "#ffaa33"
-  dark:
-    standard: "rgb(255, 159, 10)"
-    highlight: "#ffb23b"
+camino:
+  doc_img_url: "/images/cwp/"
+  cover_img_url: "/images/covers/"
+  nav_profile:
+    img_url: "logo.svg"
+    flat: false
+  theme:
+    font: 'Inter'
+    navbar: '#191919'
+    body:
+      light: '#ffffff'
+      dark: '#212121'
+    accent:
+      light:
+        standard: "rgb(255, 149, 0)"
+        highlight: "#ffaa33"
+      dark:
+        standard: "rgb(255, 159, 10)"
+        highlight: "#ffb23b"
 
 navigation:
   - name: "Home"

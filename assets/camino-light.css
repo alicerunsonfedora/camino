@@ -13,10 +13,11 @@
     no preference.
  */
  :root {
-    --accent:  {{ site.accent.light.standard }};
-    --accent-highlight: {{ site.accent.light.highlight }};
-    --body-background: white;
+    --accent:  {{ site.camino.theme.accent.light.standard }};
+    --accent-highlight: {{ site.camino.theme.accent.light.highlight }};
+    --body-background: {{ site.camino.theme.body.light }};
     --body-color: #212121;
+    --navbar-color: {{ site.camino.theme.navbar }};
     --metadata-header-color: #666;
     --metadata-header-alt-color: #888;
     --blockquote-background: #f4f4f4;

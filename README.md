@@ -44,34 +44,51 @@ plugins:
 # website.
 webmaster_email: contact@example.com
 
-# This path will point to images used for the article/document format. Camino will
-# look in this path for images with the file name of the shortcode listed on a document
-# page. For example, 'wrt181-assignment1.png'
-doc_img_url: "/images/cwp/"
+# This segment is the heart of the Camino configuration.
+camino:
+  # This path will point to images used for the article/document format. Camino will
+  # look in this path for images with the file name of the shortcode listed on a document
+  # page. For example, 'wrt181-assignment1.png'
+  doc_img_url: "/images/cwp/"
 
-# This path will point to images used for covers on posts. Camino will look in this path
-# for image covers with the page's date. For example, '2020-02-17-cover.png'
-cover_img_url: "/images/covers/"
+  # This path will point to images used for covers on posts. Camino will look in this path
+  # for image covers with the page's date. For example, '2020-02-17-cover.png'
+  cover_img_url: "/images/covers/"
 
-# These settings configure the navbar profile picture.
-nav_profile:
-  # The image path to the profile.
-  img_url: "images/profile.jpeg"
+  # This setting controls what's displayed on the navbar profile picture.
+  nav_profile:
+    # The path to the profile picture.
+    img_url: "logo.svg"
 
-  # Whether to disable the drop shadow.
-  flat: false
+    # Whether the drop shadow should be removed from the profile picture.
+    flat: false
 
-# This setting controls the accent color on the website. The accent color affects buttons, links,
-# and other places of the theme. The 'light' and 'dark' entries control what color is displayed
-# in light mode and dark mode, respectively. The standard and highlight entries control the idle
-# and hover states.
-accent:
-  light:
-    standard: "rgb(52, 199, 89)"
-    highlight: "#5dd27a"
-  dark:
-    standard: "rgb(48, 209, 88)"
-    highlight: "#59da79"
+  # This controls more aspects of Camino's theme.
+  theme:
+
+    # If you want to override the font, set a custom font here. This font will be used
+    # over the standard Inter font, but Inter will be provided when this font cannot
+    # be loaded.
+    font: 'Inter'
+
+    # The background color of the navbar.
+    navbar: '#191919'
+
+    # The background color of the main page, both in light and dark mode.
+    body:
+      light: '#ffffff'
+      dark: '#212121'
+
+    # The accent color on the website. The accent color affects buttons, links, and other places of the
+    # theme. The 'light' and 'dark' entries control what color is displayed in light mode and dark mode,
+    # respectively. The standard and highlight entries control the idle and hover states.
+    accent:
+      light:
+        standard: "rgb(255, 149, 0)"
+        highlight: "#ffaa33"
+      dark:
+        standard: "rgb(255, 159, 10)"
+        highlight: "#ffb23b"
 
 # This list controls the links visible in the navbar.
 navigation:
@@ -109,6 +126,8 @@ date: 2018-08-29
 - `class`: This field can be used to denote an academic class or the purpose of the document.
 - `shortcode`: The shortcode used to denote the name of the image to use in conjunction with `doc_img_url`
 - `date`: The document's publish date
+
+The author's name will be pulled from the author field in the site configuration.
 
 ## License
 
