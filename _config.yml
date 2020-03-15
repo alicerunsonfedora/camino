@@ -7,7 +7,7 @@ author: Marquis Kurt
 description: A KISS theme for Jekyll
 
 webmaster_email: webmaster@marquiskurt.net
-copyright: "&copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved."
+copyright: "&copy; 2020 Marquis Kurt. Licensed unver MPL v2.0."
 
 navigation:
   - name: "Home"
@@ -16,6 +16,8 @@ navigation:
     link: "/blog.html"
   - name: "GitHub"
     link: "https://github.com/alicerunsonfedora/camino"
+  - name: "YouTrack"
+    link: "https://youtrack.marquiskurt.net/youtrack/issues/CMN"
   - name: "Example Post"
     link: "/2020/02/17/example_post.html"
   - name: "Example Article"

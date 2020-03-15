@@ -132,6 +132,10 @@ date: 2018-08-29
 
 The author's name will be pulled from the author field in the site configuration.
 
+## Found a bug?
+
+You can report issues on the Camino [issue tracker page on YouTrack](https://youtrack.marquiskurt.net/youtrack/issues/CMN).
+
 ## License
 
 Camino is open-source software licensed under the Mozilla Public License v2.
